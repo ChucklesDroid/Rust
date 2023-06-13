@@ -1,0 +1,24 @@
+To handle large rust projects we make use of cargo:
+
+Following are the most useful cargo commands:
+a) We can make a new rust project using : $ cargo new <project-name>
+b) We can build the project using : $ cargo build 
+c) We can direclty build and run the project using: $ cargo run 
+d) We can check if the rust project works or not without having to build the executable:
+$ cargo check
+e) We build rust projects using '.toml' configuration files.
+
+Cargo as convention:
+$ git clone www.example.com
+$ cd someproject
+$ cargo build 
+
+To install the latest stable version of rust using 'rustup'. 
+
+The basic structure of generated Cargo.toml :
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
